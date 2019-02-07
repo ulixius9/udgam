@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>Departments Dashboard</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">UDGAM CHARITY</a>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="dash.html"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="emp.php"><i class="icon-people"></i>Employee Details</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="student_details.html"><i class="fa fa-child"></i>Student Details</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="events.php"><i class="fa fa-puzzle-piece"></i>Event Details</a>
+                            </li>
+                             <li class="nav-item ">
+                                <a class="nav-link " href="voul.php"><i class="fa fa-puzzle-piece"></i>Voulenteer Details</a>
+
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " href="ware.php"><i class="fa fa-child"></i>Warehouse</a>
+                            
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="don.html"><i class="fas fa-user "></i>Donations</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="account.html"><i class="fas fa-user "></i>Account</a>
+                            </li>
+                            
+                            <li class="nav-item ">
+                                    <a class="nav-link" href="../index.php"><i class="fas fa-external-link-alt"></i>Visit Site</a>
+                            </li>
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../voulenteer/logout.php"><i class="fas fa-power-off"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+                    <!-- ============================================================== -->
+                    <!-- pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Admins Dashboard </h2>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="ecommerce-widget">    
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header"> Product Category</h5>
+                                    <div class="card-body">
+                                        <div class="ct-chart-category ct-golden-section" style="height: 315px;"></div>
+                                        <div class="text-center m-t-40">
+                                            <span class="legend-item mr-3">
+                                                    <span class="fa-xs text-primary mr-1 legend-tile"><i class="fa fa-fw fa-square-full "></i></span><span class="legend-text">Man</span>
+                                            </span>
+                                            <span class="legend-item mr-3">
+                                                <span class="fa-xs text-secondary mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
+                                            <span class="legend-text">Woman</span>
+                                            </span>
+                                            <span class="legend-item mr-3">
+                                                <span class="fa-xs text-info mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
+                                            <span class="legend-text">Accessories</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <div class="col-md-8 col-sm-12 col-12">
+                        <div class="card">
+                            <h5 class="card-header">Revenue</h5>
+                            <div class="card-body">
+                                <canvas id="revenue" width="400" height="150"></canvas>
+                            </div>
+                            <div class="card-body border-top">
+                                <div class="row">
+                                    <div class="offset-xl-1 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 p-3">
+                                        <h4> Today's Earning: $2,800.30</h4>
+                                        <p>Suspendisse potenti. Done csit amet rutrum.
+                                        </p>
+                                    </div>
+                                    <div class="offset-xl-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3">
+                                        <h2 class="font-weight-normal mb-3"><span>$48,325</span>                                                    </h2>
+                                        <div class="mb-0 mt-3 legend-item">
+                                            <span class="fa-xs text-primary mr-1 legend-title "><i class="fa fa-fw fa-square-full"></i></span>
+                                            <span class="legend-text">Current Week</span></div>
+                                    </div>
+                                    <div class="offset-xl-1 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 p-3">
+                                        <h2 class="font-weight-normal mb-3">
+
+                                                        <span>$59,567</span>
+                                                    </h2>
+                                        <div class="text-muted mb-0 mt-3 legend-item"> <span class="fa-xs text-secondary mr-1 legend-title"><i class="fa fa-fw fa-square-full"></i></span><span class="legend-text">Previous Week</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <h5 class="card-header">Top Selling Products</h5>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="bg-light">
+                                            <tr class="border-0">
+                                                <th class="border-0">#</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Quantity</th>
+                                                <th class="border-0">Price</th>
+                                                <th class="border-0">Order Time</th>
+                                                <th class="border-0">Customer</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="m-r-10"><img src="assets/images/product-pic.jpg" alt="user" class="rounded" width="45"></div>
+                                                </td>
+                                                <td>Product #1 </td>
+                                                <td>id000001 </td>
+                                                <td>20</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+                                                <td>Patricia J. King </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="m-r-10"><img src="assets/images/product-pic-2.jpg" alt="user" class="rounded" width="45"></div>
+                                                </td>
+                                                <td>Product #2 </td>
+                                                <td>id000002 </td>
+                                                <td>12</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+                                                <td>Rachel J. Wicker </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div class="m-r-10"><img src="assets/images/product-pic-3.jpg" alt="user" class="rounded" width="45"></div>
+                                                </td>
+                                                <td>Product #3 </td>
+                                                <td>id000003 </td>
+                                                <td>23</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+                                                <td>Michael K. Ledford </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div class="m-r-10"><img src="assets/images/product-pic-4.jpg" alt="user" class="rounded" width="45"></div>
+                                                </td>
+                                                <td>Product #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+                                                <td>Michael K. Ledford </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
+    <script src="assets/vendor/charts/charts-bundle/chartjs.js"></script>
+   
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+    <script src="assets/libs/js/dashboard-sales.js"></script>
+</body>
+ 
+</html>
